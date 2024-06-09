@@ -1,0 +1,186 @@
+<html>
+<head>
+    <title>Tours & Travels</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .title-container {
+            background-color: black;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .title {
+            font-size: 50px;
+            color: #fff;
+            margin: 0;
+        }
+
+        .marque-container {
+            background-color: #fff;
+            padding: 10px 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        .marque h2 {
+            color: red;
+            margin: 0;
+        }
+
+        .tours-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            max-width: 1200px;
+        }
+
+        .tour-box {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 20px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .tour-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .tour-details {
+            margin-top: 10px;
+        }
+
+        .tour-details h3 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .tour-details p {
+            font-size: 16px;
+            color: #666;
+            margin: 10px 0;
+        }
+
+        .tour-price {
+            font-size: 24px;
+            color: #4CAF50;
+            margin-top: 10px;
+        }
+		.submit-button {
+    background-color: #4CAF50; 
+    color: white; 
+    border: none;
+    padding: 15px 32px; 
+    text-align: center;
+    text-decoration: none; 
+    display: inline-block;
+    font-size: 16px; 
+    margin: 4px 2px; 
+    cursor: pointer; 
+    border-radius: 12px; 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.submit-button:hover {
+    background-color: #45a049; 
+    transform: scale(1.05); 
+}
+
+    </style>
+</head>
+<body>
+    <div class="title-container">
+        <h1 class="title" id="titleText">BEAUTYFUL TOURS & TRAVELS</h1>
+		
+    </div>
+
+    <div class="marque-container">
+        <marquee class="marque"><h2>Discover Amazing Tours Under Your Budgets! Get Up To 50% Off on Selected Packages</h2></marquee>
+    </div>
+
+    <div class="tours-container">
+        <div class="tour-box">
+            <img src="C:\Users\advit\OneDrive\Desktop\th (1).jpeg" alt="Paris Tour Image" class="tour-image">
+            <div class="tour-details">
+                <h3>Beautiful Paris Tour</h3>
+                <p>Experience the romantic charm of Paris.</p>
+                <div class="tour-price">₹99000</div>
+				<br>
+    <button class="submit-button">book now</button>
+            </div>
+        </div>
+
+        <div class="tour-box">
+            <img src="C:\Users\advit\OneDrive\Desktop\singa.jpg" alt="Singapore Tour Image" class="tour-image">
+            <div class="tour-details">
+                <h3>Singapore City Tour</h3>
+                <p>Explore the vibrant city of Singapore.</p>
+                <div class="tour-price">₹150000</div>
+				<br>
+    <button class="submit-button">book now</button>
+            </div>
+        </div>
+
+        <div class="tour-box">
+            <img src="C:\Users\advit\OneDrive\Desktop\lad.jpg" alt="Ladakh Tour Image" class="tour-image">
+            <div class="tour-details">
+                <h3>Ladakh Mountain Adventure</h3>
+                <p>Embark on an adventurous journey in Ladakh.</p>
+                <div class="tour-price">₹20000</div>
+				<br>
+    <button class="submit-button">book now</button>
+            </div>
+        </div>
+
+        <div class="tour-box">
+            <img src="C:\Users\advit\OneDrive\Desktop\mala.jpg" alt="Malaysia Tour Image" class="tour-image">
+            <div class="tour-details">
+                <h3>Malaysia City Exploration</h3>
+                <p>Discover the cultural richness of Malaysia.</p>
+                <div class="tour-price">₹120000</div>
+				<br>
+    <button class="submit-button">book now</button>
+            </div>
+        </div>
+    </div>
+<h2 style="font-size:20px"> For More Details Contact <br> Call Us At : +91 52525 56231 <br>Email:BTT@gmail.com <script>
+        function changeTextColor() {
+            var title = document.getElementById("titleText");
+            var colors = ["red", "blue", "green", "orange", "purple"];  
+            var currentColor = title.style.color; 
+            var currentIndex = colors.indexOf(currentColor);
+            if (currentIndex === -1 || currentIndex === colors.length - 1) {
+                title.style.color = colors[0];
+            } else {
+                title.style.color = colors[currentIndex + 1];
+            }
+        }
+        setInterval(changeTextColor, 1000);
+    </script>
+</body>
+</html>
